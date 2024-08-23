@@ -1,0 +1,31 @@
+.first_content {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+  }
+  
+  .first_content ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+  }
+  
+  .first_content ul li {
+    margin-top: 17px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .first_content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .first_content ul li {
+      margin-top: 10px; /* Adjust margin for smaller screens */
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+  

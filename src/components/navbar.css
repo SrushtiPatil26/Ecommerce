@@ -1,0 +1,118 @@
+.header-part {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.3rem; /* Adjust the padding as needed */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav h1{
+    margin-left: 160px;
+}
+
+.header-part button {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.header-part select {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.search-container {
+    position: relative;
+  }
+  
+  .search-input {
+    padding-right: 30px; /* Adjust as needed to leave space for the icon */
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust as needed to position the icon */
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure the icon doesn't interfere with input events */
+  }
+  
+@media screen and (max-width: 768px) {
+    .header-part {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items vertically */
+    }
+
+    .header-part button,
+    .header-part select {
+        margin-top: 1rem; /* Add margin between items */
+    }
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .nav ul {
+    display: flex; /* Make the list items horizontal */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .nav ul li {
+    margin-right: 1rem; /* Add margin between list items */
+    margin-left: 3rem;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .nav input 
+  {
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .highlighted {
+    background-color: yellow;
+  }
+  .highlight {
+    background-color: yellow;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: stretch;
+       /* Stretch items to fill the container */
+    }
+  
+    .nav ul {
+      flex-direction: column; /* Stack list items vertically on smaller screens */
+    }
+  
+    .nav ul li {
+      margin-right: 0; /* Remove margin between list items on smaller screens */
+      margin-bottom: 0.5rem; /* Add margin between list items vertically on smaller screens */
+    }
+  
+    .search-box {
+      margin-top: 1rem; /* Add margin to separate from other items */
+    }
+  }
+  

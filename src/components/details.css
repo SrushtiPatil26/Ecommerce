@@ -1,0 +1,44 @@
+.detail span{
+    margin-left: 163px;
+}
+.details {
+    display: flex;
+}
+.l1 img{
+    display: flex;
+    margin-left: 160px;
+    margin-top: 30px;
+    width: 150px;
+}
+.l2 img {
+    margin-top: 100px;
+    margin-left: 100px;
+    padding: 20px;
+    width: 500px; /* Adjust the width according to your preference */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.l2 img:hover {
+    transform: scale(1.05); /* Scale up the image on hover */
+}
+.l3{
+    margin-left: 30px;
+    padding: 10px;
+}
+.l3 button {
+    background-color: red; /* Set background color to red */
+    color: white; /* Set text color to white */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding for better spacing */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+.l3 button:hover {
+    background-color: darkred; /* Darken the background color on hover */
+}
